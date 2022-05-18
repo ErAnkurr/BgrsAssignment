@@ -69,7 +69,7 @@ const Character = () => {
     return (
         <React.Fragment>
             <section>
-                <h2>List of Movies</h2>
+                <h2>Please select Characters: </h2>
                 <select className="form-select" aria-label="Default select example"
                     onChange={handleSelect}>
                     {characterInfoList && <CharacterList character={characterInfoList} />}
