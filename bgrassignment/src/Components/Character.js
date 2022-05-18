@@ -53,10 +53,10 @@ const Character = () => {
             })
         )
         setFilmInfo(filmsInfo)
-        if(filmsInfo.length > 1)
-        {
+        // if(filmsInfo.length > 1)
+        // {
             setLastMovieInfo(filmsInfo[filmsInfo.length-1])
-        }
+        // }
         // dispatch(loaderActions.closeLoader); 
         setLoading(false)               
     }
@@ -75,10 +75,10 @@ const Character = () => {
                     {characterInfoList && <CharacterList character={characterInfoList} />}
                 </select>
             </section>
-            <ClipLoader color={`$red`} loading={loading} size={150} />                
-            <section>
+            <ClipLoader color={`$red`} loading={loading} size={50} />                
+            <div>
                 {filmInfo && <Movies movies={filmInfo} />}
-            </section>
+            </div>
             <section>
                 {lastMovieInfo && <LastMovieDetails lastMovie = {lastMovieInfo}/>}
             </section>
