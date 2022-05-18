@@ -1,9 +1,12 @@
 import React from 'react'
 
-const LastMovieDetails = () => {
+const LastMovieDetails = (props) => {
 
     return (
-        <h3>Name/Year Last Movie</h3>
+        <div>
+            <h3>Name/Year Last Movie</h3>
+            {props.lastMovie.name} / {props.lastMovie.releaseDate}
+        </div>
     )
 }
 
